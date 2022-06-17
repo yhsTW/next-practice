@@ -1,0 +1,9 @@
+.ssr-post {
+    @include column();
+    gap: 20px;
+
+    .tags {
+        @include flex();
+        gap: 10px;
+    }
+}

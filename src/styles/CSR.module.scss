@@ -1,0 +1,15 @@
+.csr {
+    width: 700px;
+    @include flex();
+    flex-direction: column;
+    gap: 30px;
+
+    .title {
+        @include bold(2rem);
+    }
+
+    .section {
+        @include flex();
+        flex-direction: column;
+    }
+}

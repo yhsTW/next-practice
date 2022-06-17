@@ -1,0 +1,8 @@
+.go-home {
+    all: unset;
+    @include rectangle(80px, 30px, 6px);
+    @include center();
+    @include font(0.7rem, null, #727272);
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+}

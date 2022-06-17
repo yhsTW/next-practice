@@ -1,0 +1,8 @@
+.posts {
+    height: 500px;
+    max-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, auto));
+    gap: 2rem;
+    overflow: hidden auto;
+}

@@ -1,0 +1,21 @@
+@import 'reset-css/sass/reset';
+
+html,
+body {
+    @include rectangle(100vw, 100vh);
+    @include flex();
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+    color: $black100;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#__next {
+    @include square(100%);
+}

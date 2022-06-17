@@ -1,0 +1,14 @@
+.layout {
+    @include square(100%);
+    @include flex();
+    flex-direction: column;
+
+    .main {
+        flex: 1;
+        @include center();
+    }
+
+    .footer {
+        @include flex(null, flex-end);
+    }
+}

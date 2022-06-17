@@ -1,0 +1,34 @@
+@mixin rectangle($width: null, $height: null, $radius: null) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}
+
+@mixin square($size, $radius: null) {
+    @include rectangle($size, $size, $radius);
+}
+
+@mixin flex($align: null, $justify: null) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin center {
+    @include flex(center, center);
+}
+
+@mixin column($align: null, $justify: null) {
+    @include flex($align, $justify);
+    flex-direction: column;
+}
+
+@mixin font($size: $font-size, $weight: normal, $color: $black100) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+
+@mixin bold($size: null, $color: null) {
+    @include font($size, bold, $color);
+}

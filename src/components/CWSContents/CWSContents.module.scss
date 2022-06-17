@@ -1,0 +1,6 @@
+.contents {
+    height: 580px;
+    @include flex();
+    flex-direction: column;
+    gap: 30px;
+}

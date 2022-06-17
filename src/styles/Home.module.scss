@@ -1,0 +1,19 @@
+.home {
+    flex: 1;
+    @include center();
+    flex-direction: column;
+    gap: 30px;
+
+    .title {
+        @include bold(3rem);
+    }
+
+    .links {
+        @include flex();
+        flex-direction: column;
+
+        .link {
+            @include font(1.5rem);
+        }
+    }
+}
