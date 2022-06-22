@@ -27,6 +27,7 @@ module.exports = {
     },
     env: {
         BASE_URL: process.env.BASE_URL,
-        APP_ID: process.env.APP_ID
+        APP_ID: process.env.APP_ID,
+        ENDPOINT: process.env.ENDPOINT
     }
 };
