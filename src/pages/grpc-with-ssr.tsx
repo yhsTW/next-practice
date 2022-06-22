@@ -14,13 +14,13 @@ const GRPCWithSSR2 = ({ message }) => {
 
 export const getServerSideProps = async () => {
     try {
-        const { data: message } = await axios({
+        const { data } = await axios({
             method: 'POST',
             url: 'http://localhost:3000/api/greeter',
             params: { name: 'world@@@' }
         });
-        console.log(message);
-        return { props: { ...message } };
+
+        return { props: { ...data } };
     } catch (err) {
         console.log(err);
         return { props: { err: err.message } };
