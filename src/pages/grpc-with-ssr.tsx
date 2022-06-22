@@ -20,7 +20,7 @@ export const getServerSideProps = async () => {
             params: { name: 'world@@@' }
         });
         console.log(message);
-        return { props: { message } };
+        return { props: { ...message } };
     } catch (err) {
         console.log(err);
         return { props: { err: err.message } };
